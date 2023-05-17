@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+	
+
+	<title>Dashboard</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="index.html" class="brand">
+			<i class='bx bxs-happy'></i>
+			<span class="text">GYMHub</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="index.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="membros/index.html">
+					<i class='bx bxs-user' ></i>
+					<span class="text">Membros</span>
+				</a>
+			</li>
+			<li>
+				<a href="funcionarios/index.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Funcionários</span>
+				</a>
+			</li>
+			<li>
+				<a href="aulas/index.html">
+					<i class='bx bxs-calendar'></i>
+					<span class="text">Aulas</span>
+				</a>
+			</li>
+			<li>
+				<a href="equipamento/index.html">
+					<i class='bx bx-dumbbell' ></i>
+					<span class="text">Equipamento</span>
+				</a>
+			</li>
+			<li>
+				<a href="faturas/index.html">
+					<i class='bx bx-file' ></i>
+					<span class="text">Faturas</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Definições</span>
+				</a>
+			</li>
+			<li>
+				<a href="../homepage/index.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="img/admin.png" alt="Admin Profile Picture">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Dashboard</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Download PDF</span>
+				</a>
+			</div>
+
+			<ul class="box-info">
+				<li>
+					&nbsp;
+					<img alt="chart" src="img/chart_2.png" width="120px">
+					&nbsp;
+					<span class="text">
+						<h3>948</h3>
+						<p>Pagamentos Realizados</p>
+					</span>
+				</li>
+				<li>
+					&nbsp;
+					<img alt="chart" src="img/chart_1.png" width="120px">
+					&nbsp;
+					<span class="text">
+						<h3>142</h3>
+						<p>Pagamentos em Falta</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-dollar-circle' ></i>
+					<span class="text">
+						<h3>10,483€</h3>
+						<p>Total</p>
+					</span>
+				</li>
+			</ul>
+			<ul class="box-info">
+				<li>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img alt="bar chart" src="img/barchart.png" width="600px">
+				</li>
+				<li>
+					<div class="classtime-table">
+						<table>
+							<thead>
+								<tr>
+									<th></th>
+									<th>Segunda</th>
+									<th>Terça</th>
+									<th>Quarta</th>
+									<th>Quinta</th>
+									<th>Sexta</th>
+									<th>Sábado</th>
+									<th>Domingo</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="workout-time">10.00</td>
+									<td class="hover-bg ts-item" data-tsmeta="crossfit">
+										<span>10.00 - 14.00</span>
+										<h6>Crossfit nível 1</h6>
+									</td>
+									<td></td>
+									<td class="hover-bg ts-item" data-tsmeta="crossfit">
+										<span>10.00 - 15.00</span>
+										<h6>Crossfit nível 1</h6>
+									</td>
+									<td></td>
+									<td class="hover-bg ts-item" data-tsmeta="lunge">
+										<span>10.00 - 13.00</span>
+										<h6>Pilates</h6>
+									</td>
+									<td></td>
+									<td class="hover-bg ts-item" data-tsmeta="lunge">
+										<span>10.00 - 13.30</span>
+										<h6>Pilates</h6>
+									</td>
+								</tr>
+								<tr>
+									<td class="workout-time">14.00</td>
+									<td></td>
+									<td class="hover-bg ts-item" data-tsmeta="lunge">
+										<span>14.00 - 17.00</span>
+										<h6>Pilates</h6>
+									</td>
+									<td></td>
+									<td class="hover-bg ts-item" data-tsmeta="crossfit">
+										<span>14.00 - 17.00</span>
+										<h6>Crossfit nível 1</h6>
+									</td>
+									<td></td>
+									<td class="hover-bg ts-item" data-tsmeta="walls">
+										<span>14.00 - 15.30</span>
+										<h6>HIIT</h6>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="workout-time">16.00</td>
+									<td class="hover-bg ts-item" data-tsmeta="lunge">
+										<span>16.00 - 18.00</span>
+										<h6>Pilates</h6>
+									</td>
+									<td></td>
+									<td class="hover-bg ts-item" data-tsmeta="Yoga">
+										<span>16.00 - 19.00</span>
+										<h6>Yoga</h6>
+									</td>
+									<td></td>
+									<td class="hover-bg ts-item" data-tsmeta="Yoga">
+										<span>16.00 - 19.00</span>
+										<h6>Yoga</h6>
+									</td>
+									<td class="hover-bg ts-item" data-tsmeta="Zumba">
+										<span>16.00 - 17.00</span>
+										<h6>Zumba</h6>
+									</td>
+									<td class="hover-bg ts-item" data-tsmeta="murph">
+										<span>16.00 - 20.00</span>
+										<h6>murph</h6>
+									</td>
+								</tr>
+								<tr>
+									<td class="workout-time">18.00</td>
+									<td class="hover-bg ts-item" data-tsmeta="walls">
+										<span>18.00 - 20.00</span>
+										<h6>HIIT</h6>
+									</td>
+									<td class="hover-bg ts-item" data-tsmeta="Zumba">
+										<span>18.00 - 20.00</span>
+										<h6>Zumba</h6>
+									</td>
+									<td></td>
+									<td class="hover-bg ts-item" data-tsmeta="chelsea">
+										<span>18.00 - 22.00</span>
+										<h6>Chelsea</h6>
+									</td>
+									<td></td>
+									<td class="hover-bg ts-item" data-tsmeta="annie">
+										<span>18.00 - 22.00</span>
+										<h6>annie</h6>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="workout-time">20.00</td>
+									<td class="hover-bg ts-item" data-tsmeta="lunge">
+										<span>21.00 - 23.00</span>
+										<h6>Pilates</h6>
+									</td>
+									<td class="hover-bg ts-item" data-tsmeta="walls">
+										<span>20.00 - 22.00</span>
+										<h6>HIIT</h6>
+									</td>
+									<td class="hover-bg ts-item" data-tsmeta="walls">
+										<span>20.30 - 23.00</span>
+										<h6>HIIT</h6>
+									</td>
+									<td></td>
+									<td class="hover-bg ts-item" data-tsmeta="crossfit">
+										<span>22.00 - 23.00</span>
+										<h6>Crossfit nível 2</h6>
+									</td>
+									<td></td>
+									<td class="hover-bg ts-item" data-tsmeta="crossfit">
+										<span>21.00 - 23.00</span>
+										<h6>Crossfit nível 2</h6>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Aulas de Hoje</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Progresso</th>
+								<th>Modalidade</th>
+								<th>Personal Trainer</th>
+								<th>Hora</th>
+								<th>Capacidade</th>
+								<th>Nº de Reservas</th>
+								<th>Nº pessoas</th>
+								<th>Precisa Equipamento</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="status progresso">Em progresso</span></td>
+								<td>Crossfit Nível 1</td>
+								<td>
+									<div class="idname">
+										<h6 class="id"><a href="/clientes/index.html">PT-3728</a></h6>
+										<p>Brad Lee</p>
+									</div>
+								</td>
+								<td>
+									<div class="idname">
+										<p>10:00 - 12:00</p>
+										<h6 class="id">Qui, 6 jun, 2023</h6>
+									</div>
+								</td>
+								
+								<td>20 pessoas</td>
+								<td>14 pessoas</td>
+								<td>17 pessoas</td>
+								<td>Não</td>
+								<td><a href="aulas/details.html">Detalhes</a></td>
+							</tr>
+							<tr>
+								<td><span class="status progresso">Em progresso</span></td>
+								<td>HIIT</td>
+								<td>
+									<div class="idname">
+										<h6 class="id"><a href="/clientes/index.html">PT-3725</a></h6>
+										<p>Ângelo Santos</p>
+									</div>
+								</td>
+								<td>
+									<div class="idname">
+										<p>10:00 - 12:00</p>
+										<h6 class="id">Qui, 6 jun, 2023</h6>
+									</div>
+								</td>
+								
+								<td>10 pessoas</td>
+								<td>8 pessoas</td>
+								<td>8 pessoas</td>
+								<td>
+									<div class="idname">
+										<p>Sim</p>
+										<h6 class="id">8 Bicicletas</h6>
+									</div>
+								</td>
+								<td><a>Detalhes</a></td>
+							</tr>
+							<tr>
+								<td><span class="status seguir">A Seguir</span></td>
+								<td>Pilates</td>
+								<td>
+									<div class="idname">
+										<h6 class="id"><a href="/clientes/index.html">PT-3722</a></h6>
+										<p>Maria Inês</p>
+									</div>
+								</td>
+								<td>
+									<div class="idname">
+										<p>14:00 - 16:00</p>
+										<h6 class="id">Qui, 6 jun, 2023</h6>
+									</div>
+								</td>
+								
+								<td>7 pessoas</td>
+								<td>7 pessoas</td>
+								<td>7 pessoas</td>
+								<td>
+									<div class="idname">
+										<p>Sim</p>
+										<h6 class="id">7 Tapetes</h6>
+									</div>
+								</td>
+								<td><a href="#">Detalhes</a></td>
+							</tr>
+							<tr>
+								<td><span class="status cancelado">Aula Cancelada</span></td>
+								<td>Zumba</td>
+								<td>
+									<div class="idname">
+										<h6 class="id"><a href="/clientes/index.html">PT-3723</a></h6>
+										<p>Jorge Simões</p>
+									</div>
+								</td>
+								<td>
+									<div class="idname">
+										<p>14:00 - 16:00</p>
+										<h6 class="id">Qui, 6 jun, 2023</h6>
+									</div>
+								</td>
+								
+								<td>20 pessoas</td>
+								<td>4 pessoas</td>
+								<td>3 pessoas</td>
+								<td>Não</td>
+								<td><a href="#">Detalhes</a></td>
+							</tr>
+							<tr>
+								<td><span class="status past">Aula Acabada</span></td>
+								<td>Yoga</td>
+								<td>
+									<div class="idname">
+										<h6 class="id"><a href="/clientes/index.html">PT-3722</a></h6>
+										<p>Maria Inês</p>
+									</div>
+								</td>
+								<td>
+									<div class="idname">
+										<p>10:00 - 12:00</p>
+										<h6 class="id">Qua, 5 jun, 2023</h6>
+									</div>
+								</td>
+								
+								<td>20 pessoas</td>
+								<td>14 pessoas</td>
+								<td>17 pessoas</td>
+								<td>
+									<div class="idname">
+										<p>Sim</p>
+										<h6 class="id">17 Tapetes</h6>
+									</div>
+								</td>
+								<td><a href="#">Detalhes</a></td>
+							</tr>
+							<tr>
+								<td><span class="status past">Aula acabada</span></td>
+								<td>Crossfit Nível 1</td>
+								<td>
+									<div class="idname">
+										<h6 class="id"><a href="/clientes/index.html">PT-3723</a></h6>
+										<p>Jorge Simões</p>
+									</div>
+								</td>
+								<td>
+									<div class="idname">
+										<p>10:00 - 12:00</p>
+										<h6 class="id">Qua, 5 jun, 2023</h6>
+									</div>
+								</td>
+								
+								<td>20 pessoas</td>
+								<td>12 pessoas</td>
+								<td>19 pessoas</td>
+								<td>Não</td>
+								<td><a>Detalhes</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+</body>
+</html>

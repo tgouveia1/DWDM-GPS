@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Utilizador</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="sidebar-top">
+          <span class="shrink-btn">
+            <i class='bx bx-chevron-left'></i>
+          </span>
+          <img src="./img/logo.png" class="logo" alt="">
+          <h3 class="hide">ACTIVITAR</h3>
+        </div>
+    
+        <div class="search">
+          <i class='bx bx-search'></i>
+          <input type="text" class="hide" placeholder="Procurar ...">
+        </div>
+    
+        <div class="sidebar-links">
+          <ul>
+            <div class="active-tab"></div>
+            <li class="tooltip-element" data-tooltip="0">
+              <a href="../index.html" class="active" data-active="0">
+                <div class="icon">
+                  <i class='bx bx-home'></i>
+                  <i class='bx bxs-home'></i>
+                </div>
+                <span class="link hide">Início</span>
+              </a>
+            </li>
+            <li class="tooltip-element" data-tooltip="1">
+              <a href="../classes/index.html" data-active="1">
+                <div class="icon">
+                  <i class='bx bx-calendar'></i>
+                  <i class='bx bxs-calendar'></i>
+                </div>
+                <span class="link hide">Aulas</span>
+              </a>
+            </li>
+            <li class="tooltip-element" data-tooltip="2">
+              <a href="../invoices/index.html" data-active="2">
+                <div class="icon">
+                  <i class='bx bx-money'></i>
+                  <i class='bx bxs-money'></i>
+                </div>
+                <span class="link hide">Pagamentos</span>
+              </a>
+            </li>
+            <div class="tooltip">
+              <span class="show">Início</span>
+              <span>Aulas</span>
+              <span>Pagamentos</span>
+            </div>
+          </ul>
+    
+          <h4 class="hide">Shortcuts</h4>
+    
+          <ul>
+            <li class="tooltip-element" data-tooltip="1">
+              <a href="#" data-active="5">
+                <div class="icon">
+                  <i class='bx bx-help-circle'></i>
+                  <i class='bx bxs-help-circle'></i>
+                </div>
+                <span class="link hide">Ajuda</span>
+              </a>
+            </li>
+            <li class="tooltip-element" data-tooltip="2">
+              <a href="#" data-active="6">
+                <div class="icon">
+                  <i class='bx bx-cog'></i>
+                  <i class='bx bxs-cog'></i>
+                </div>
+                <span class="link hide">Definições</span>
+              </a>
+            </li>
+            <div class="tooltip">
+              <span>Ajuda</span>
+              <span>Definições</span>
+            </div>
+          </ul>
+        </div>
+    
+        <div class="sidebar-footer">
+          <a href="#" class="account tooltip-element" data-tooltip="0">
+            <i class='bx bx-user'></i>
+          </a>
+          <div class="admin-user tooltip-element" data-tooltip="1">
+            <div class="admin-profile hide">
+              <img src="../img/face-1.jpg" alt="">
+              <div class="admin-info">
+                <h3>Martim Manhã</h3>
+              </div>
+            </div>
+            <a href="#" class="log-out">
+              <i class='bx bx-log-out'></i>
+            </a>
+          </div>
+          <div class="tooltip">
+            <span class="show">Martim Manhã</span>
+            <span>Logout</span>
+          </div>
+        </div>
+      </nav>
+
+
+  <main>
+    <h1>Olá Martim!</h1>
+    <h5>6 junho, Terça</h5>
+    <br><br><br>
+    <h3 style="margin-bottom: 20px;">Aulas Disponíveis</h3>
+    <a href="auladisp.html"><img alt="main" src="../img/disponiveis.png" width="100%" style="margin-bottom: 20px;"></a>
+    <ul class="box-info" style="margin-top:0px;">
+        
+        <li>
+            <div class="classtime-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Segunda(5/06)</th>
+                            <th>Terça(6/06)</th>
+                            <th>Quarta(7/06)</th>
+                            <th>Quinta(8/06)</th>
+                            <th>Sexta(9/06)</th>
+                            <th>Sábado(10/06)</th>
+                            <th>Domingo(11/06)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="workout-time">10.00</td>
+                            <td data-tsmeta="crossfit">
+                                <span>10.00 - 14.00</span>
+                                <h6>Crossfit nível 1</h6>
+                                <p style="font-size: 20px; color:red">Cheio</p>
+                            </td>
+                            <td><a href="agendar.html"style="font-size: 15px;">Agendar Sessão Individual</a></td>
+                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                <span>10.00 - 15.00</span>
+                                <h6>Crossfit nível 1</h6>
+                                <p style="font-size: 15px;"><a href="auladisp.html" style="color:green; font-size:20px">Disponível</a></p>
+                            </td>
+                            <td><a href="noagendar.html" style="font-size: 15px;">Agendar Sessão Individual</a></td>
+                            <td class="hover-bg ts-item" data-tsmeta="lunge">
+                                <a href="#">
+                                    <span>10.00 - 13.00</span>
+                                    <h6>Pilates</h6>
+                                    <p style="font-size: 20px; color:red">Cheio</p>
+
+                                </a>
+                            </td>
+                            <td>
+                                <a href="sessaoindiv.html">
+                                    <span>10.00 - 13.00</span>
+                                    <h6 style="color:rgb(27, 152, 242)">Sessão individual</h6>
+                                </a>
+                            </td>
+                            
+                                <td class="hover-bg ts-item" data-tsmeta="lunge">
+                                        <span>10.00 - 13.30</span>
+                                        <h6>Pilates</h6>
+                                </td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="workout-time">14.00</td>
+                            <td></td>
+                            <td class="hover-bg ts-item" data-tsmeta="lunge">
+                                <span>14.00 - 17.00</span>
+                                <h6>Pilates</h6>
+                            </td>
+                            <td></td>
+                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                <span>14.00 - 17.00</span>
+                                <h6>Crossfit nível 1</h6>
+                            </td>
+                            <td></td>
+                            <td class="hover-bg ts-item" data-tsmeta="walls">
+                                <span>14.00 - 15.30</span>
+                                <h6>HIIT</h6>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="workout-time">16.00</td>
+                            <td class="hover-bg ts-item" data-tsmeta="lunge">
+                                <span>16.00 - 18.00</span>
+                                <h6>Pilates</h6>
+                            </td>
+                            <td></td>
+                            <td class="hover-bg ts-item" data-tsmeta="Yoga">
+                                <span>16.00 - 19.00</span>
+                                <h6>Yoga</h6>
+                            </td>
+                            <td></td>
+                            <td class="hover-bg ts-item" data-tsmeta="Yoga">
+                                <span>16.00 - 19.00</span>
+                                <h6>Yoga</h6>
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="Zumba">
+                                <span>16.00 - 17.00</span>
+                                <h6>Zumba</h6>
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="murph">
+                                <span>16.00 - 20.00</span>
+                                <h6>murph</h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="workout-time">18.00</td>
+                            <td class="hover-bg ts-item" data-tsmeta="walls">
+                                <span>18.00 - 20.00</span>
+                                <h6>HIIT</h6>
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="Zumba">
+                                <span>18.00 - 20.00</span>
+                                <h6>Zumba</h6>
+                            </td>
+                            <td></td>
+                            <td class="hover-bg ts-item" data-tsmeta="chelsea">
+                                <span>18.00 - 22.00</span>
+                                <h6>Chelsea</h6>
+                            </td>
+                            <td></td>
+                            <td class="hover-bg ts-item" data-tsmeta="annie">
+                                <span>18.00 - 22.00</span>
+                                <h6>annie</h6>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="workout-time">20.00</td>
+                            <td class="hover-bg ts-item" data-tsmeta="lunge">
+                                <span>21.00 - 23.00</span>
+                                <h6>Pilates</h6>
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="walls">
+                                <span>20.00 - 22.00</span>
+                                <h6>HIIT</h6>
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="walls">
+                                <span>20.30 - 23.00</span>
+                                <h6>HIIT</h6>
+                            </td>
+                            <td></td>
+                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                <span>22.00 - 23.00</span>
+                                <h6>Crossfit nível 2</h6>
+                            </td>
+                            <td></td>
+                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                <span>21.00 - 23.00</span>
+                                <h6>Crossfit nível 2</h6>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </li>
+    </ul>
+  </main>
+
+  <div class="sideprofile">
+    <h4>PERFIL <span><a href="../update profile/index.html">. . .</a></span></h4>
+      <div class="info">
+        <center>
+          <img src="../img/face-1.jpg" alt="user profile photo" width="170px" style="border-radius: 50%; margin-top:20px" >
+          <h2>Martim Manhã</h2>
+          <h5><i class="bx bx-phone"></i>(+351) 928 649 189</h5>
+          <h5><i class="bx bx-envelope"></i>martimorning@gmail.com</h5>
+          <h5><i class="bx bx-map"></i>Rua da Noite 3,<br> 3500-000 Viseu, <br> Portugal</h5>
+          <h5><i class="bx bx-cake"></i>3 janeiro 1996</h5>
+        </center>
+    <h4 class="pt" style="margin-top: 50px; font-size: 15px;">PERSONAL TRAINER</h4>
+      <div class="info">
+        <center>
+          <img src="../img/trainer-2.jpg" alt="user profile photo" width="170px" style="border-radius: 50%; margin-top:20px" >
+          <h2>Brad Lee</h2>
+          <h5><i class="bx bx-phone"></i>(+351) 916 839 463</h5>
+          <h5><i class="bx bx-envelope"></i>souforte@gmail.com</h5>
+        </center>
+      </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

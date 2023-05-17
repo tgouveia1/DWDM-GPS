@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Utilizador</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="sidebar-top">
+      <span class="shrink-btn">
+        <i class='bx bx-chevron-left'></i>
+      </span>
+      <img src="./img/logo.png" class="logo" alt="">
+      <h3 class="hide">ACTIVITAR</h3>
+    </div>
+
+    <div class="search">
+      <i class='bx bx-search'></i>
+      <input type="text" class="hide" placeholder="Procurar ...">
+    </div>
+
+    <div class="sidebar-links">
+      <ul>
+        <div class="active-tab"></div>
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="#" class="active" data-active="0">
+            <div class="icon">
+              <i class='bx bx-home'></i>
+              <i class='bx bxs-home'></i>
+            </div>
+            <span class="link hide">Início</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="classes/index.html" data-active="1">
+            <div class="icon">
+              <i class='bx bx-calendar'></i>
+              <i class='bx bxs-calendar'></i>
+            </div>
+            <span class="link hide">Aulas</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="2">
+          <a href="invoices/index.html" data-active="2">
+            <div class="icon">
+              <i class='bx bx-money'></i>
+              <i class='bx bxs-money'></i>
+            </div>
+            <span class="link hide">Pagamentos</span>
+          </a>
+        </li>
+        <div class="tooltip">
+          <span class="show">Início</span>
+          <span>Aulas</span>
+          <span>Pagamentos</span>
+        </div>
+      </ul>
+
+      <h4 class="hide">Shortcuts</h4>
+
+      <ul>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="#" data-active="5">
+            <div class="icon">
+              <i class='bx bx-help-circle'></i>
+              <i class='bx bxs-help-circle'></i>
+            </div>
+            <span class="link hide">Ajuda</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="2">
+          <a href="C:\Users\tgouveia\Desktop\Ginasio\user profile\update profile\index.html" data-active="2">
+            <div class="icon">
+              <i class='bx bx-cog'></i>
+              <i class='bx bxs-cog'></i>
+            </div>
+            <span class="link hide">Definições</span>
+          </a>
+        </li>
+        <div class="tooltip">
+          <span>Ajuda</span>
+          <span>Definições</span>
+        </div>
+      </ul>
+    </div>
+
+    <div class="sidebar-footer">
+      <a href="#" class="account tooltip-element" data-tooltip="0">
+        <i class='bx bx-user'></i>
+      </a>
+      <div class="admin-user tooltip-element" data-tooltip="1">
+        <div class="admin-profile hide">
+          <img src="./img/face-1.jpg" alt="">
+          <div class="admin-info">
+            <h3>Martim Manhã</h3>
+          </div>
+        </div>
+        <a href="../homepage/index.html" class="log-out">
+          <i class='bx bx-log-out'></i>
+        </a>
+      </div>
+      <div class="tooltip">
+        <span class="show">Martim Manhã</span>
+        <span>Logout</span>
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+    <h1>Olá Martim!</h1>
+    <h5>6 junho, Terça</h5>
+    <br><br><br>
+    <img alt="main" src="img/main.png" width="100%">
+  </main>
+
+  <div class="sideprofile">
+    <h4>PERFIL <span><a href="update profile/index.html">. . .</a></span></h4>
+      <div class="info">
+        <center>
+          <img src="img/face-1.jpg" alt="user profile photo" width="170px" style="border-radius: 50%; margin-top:20px" >
+          <h2>Martim Manhã</h2>
+          <h5><i class="bx bx-phone"></i>(+351) 928 649 189</h5>
+          <h5><i class="bx bx-envelope"></i>martimorning@gmail.com</h5>
+          <h5><i class="bx bx-map"></i>Rua da Noite 3,<br> 3500-000 Viseu, <br> Portugal</h5>
+          <h5><i class="bx bx-cake"></i>3 janeiro 1996</h5>
+        </center>
+    <h4 class="pt" style="margin-top: 50px; font-size: 15px;">PERSONAL TRAINER</h4>
+      <div class="info">
+        <center>
+          <img src="img/trainer-2.jpg" alt="user profile photo" width="170px" style="border-radius: 50%; margin-top:20px" >
+          <h2>Brad Lee</h2>
+          <h5><i class="bx bx-phone"></i>(+351) 916 839 463</h5>
+          <h5><i class="bx bx-envelope"></i>souforte@gmail.com</h5>
+        </center>
+      </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

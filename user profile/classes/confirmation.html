@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Utilizador</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="sidebar-top">
+          <span class="shrink-btn">
+            <i class='bx bx-chevron-left'></i>
+          </span>
+          <img src="./img/logo.png" class="logo" alt="">
+          <h3 class="hide">ACTIVITAR</h3>
+        </div>
+    
+        <div class="search">
+          <i class='bx bx-search'></i>
+          <input type="text" class="hide" placeholder="Procurar ...">
+        </div>
+    
+        <div class="sidebar-links">
+          <ul>
+            <div class="active-tab"></div>
+            <li class="tooltip-element" data-tooltip="0">
+              <a href="../index.html" class="active" data-active="0">
+                <div class="icon">
+                  <i class='bx bx-home'></i>
+                  <i class='bx bxs-home'></i>
+                </div>
+                <span class="link hide">Início</span>
+              </a>
+            </li>
+            <li class="tooltip-element" data-tooltip="1">
+              <a href="../classes/index.html" data-active="1">
+                <div class="icon">
+                  <i class='bx bx-calendar'></i>
+                  <i class='bx bxs-calendar'></i>
+                </div>
+                <span class="link hide">Aulas</span>
+              </a>
+            </li>
+            <li class="tooltip-element" data-tooltip="2">
+              <a href="#" data-active="2">
+                <div class="icon">
+                  <i class='bx bx-money'></i>
+                  <i class='bx bxs-money'></i>
+                </div>
+                <span class="link hide">Pagamentos</span>
+              </a>
+            </li>
+            <div class="tooltip">
+              <span class="show">Início</span>
+              <span>Aulas</span>
+              <span>Pagamentos</span>
+            </div>
+          </ul>
+    
+          <h4 class="hide">Shortcuts</h4>
+    
+          <ul>
+            <li class="tooltip-element" data-tooltip="1">
+              <a href="#" data-active="5">
+                <div class="icon">
+                  <i class='bx bx-help-circle'></i>
+                  <i class='bx bxs-help-circle'></i>
+                </div>
+                <span class="link hide">Ajuda</span>
+              </a>
+            </li>
+            <li class="tooltip-element" data-tooltip="2">
+              <a href="#" data-active="6">
+                <div class="icon">
+                  <i class='bx bx-cog'></i>
+                  <i class='bx bxs-cog'></i>
+                </div>
+                <span class="link hide">Definições</span>
+              </a>
+            </li>
+            <div class="tooltip">
+              <span>Ajuda</span>
+              <span>Definições</span>
+            </div>
+          </ul>
+        </div>
+    
+        <div class="sidebar-footer">
+          <a href="#" class="account tooltip-element" data-tooltip="0">
+            <i class='bx bx-user'></i>
+          </a>
+          <div class="admin-user tooltip-element" data-tooltip="1">
+            <div class="admin-profile hide">
+              <img src="../img/face-1.jpg" alt="">
+              <div class="admin-info">
+                <h3>Martim Manhã</h3>
+              </div>
+            </div>
+            <a href="#" class="log-out">
+              <i class='bx bx-log-out'></i>
+            </a>
+          </div>
+          <div class="tooltip">
+            <span class="show">Martim Manhã</span>
+            <span>Logout</span>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <center>
+            <h2 style="font-size: 40px;margin-top:60px">Aula agendada com sucesso!</h2>
+            <img src="img/check.png" alt="check" width="120px" style="margin:60px 0px">
+            <h3 style="font-size: 35px;">10:00h - 12:00h</h3>
+            <h5 style="font-size: 25px;">Terça, 6 de junho 2023</h5>
+            <br>
+            <h3 style="font-size: 35px;">Sala</h3>
+            <h5 style="font-size: 25px;">Ginásio 3</h5>
+            <br>
+            <h3 style="font-size: 35px;">Personal Trainer</h3>
+            <h5 style="font-size: 25px;">Brad Lee</h5>
+            <br><br><br><br><br>
+            <a href="index.html" style="background-color: #2c2c2c; padding:20px 30px; border-radius: 50px; color:white; margin-right:40px">Reagendar</a>
+            <a href="cancelarauladifpt.html" style="background-color: #b90000; padding:20px 30px; border-radius: 50px; color:white;">Cancelar Aula</a>
+        </center>
+      </main>
+
+      <div class="sideprofile">
+        <h4>PERFIL <span><a href="../update profile/index.html">. . .</a></span></h4>
+          <div class="info">
+            <center>
+              <img src="../img/face-1.jpg" alt="user profile photo" width="170px" style="border-radius: 50%; margin-top:20px" >
+              <h2>Martim Manhã</h2>
+              <h5><i class="bx bx-phone"></i>(+351) 928 649 189</h5>
+              <h5><i class="bx bx-envelope"></i>martimorning@gmail.com</h5>
+              <h5><i class="bx bx-map"></i>Rua da Noite 3,<br> 3500-000 Viseu, <br> Portugal</h5>
+              <h5><i class="bx bx-cake"></i>3 janeiro 1996</h5>
+            </center>
+        <h4 class="pt" style="margin-top: 50px; font-size: 15px;">PERSONAL TRAINER</h4>
+          <div class="info">
+            <center>
+              <img src="../img/trainer-2.jpg" alt="user profile photo" width="170px" style="border-radius: 50%; margin-top:20px" >
+              <h2>Brad Lee</h2>
+              <h5><i class="bx bx-phone"></i>(+351) 916 839 463</h5>
+              <h5><i class="bx bx-envelope"></i>souforte@gmail.com</h5>
+            </center>
+          </div>
+    
+      </div>    
+</body>
